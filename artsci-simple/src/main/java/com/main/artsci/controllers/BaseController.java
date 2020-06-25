@@ -17,12 +17,12 @@ public class BaseController  {
 
     @RequestMapping(method = RequestMethod.GET, value = "/hello")
     public ResponseEntity<String> regions() {       	
-    	return new ResponseEntity<String>("Hello Artsci! :)", HttpStatus.OK);
+    	return new ResponseEntity<String>("Hello Artsci!! :)", HttpStatus.OK);
     }
     
     @RequestMapping(value = "/hello/name/{name}", method = RequestMethod.GET)
 		public ResponseEntity<String> getRegionById(@PathVariable("name") String name) {		
-		return new ResponseEntity<String>("Hello ".concat(name), HttpStatus.OK);
+		return new ResponseEntity<String>("Hello: ".concat(name), HttpStatus.OK);
 	}  
 
 }
