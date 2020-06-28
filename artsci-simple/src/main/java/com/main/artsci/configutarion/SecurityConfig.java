@@ -13,9 +13,9 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 
-//@Configuration
-//@EnableWebSecurity
-public class SecurityConfig {/*extends WebSecurityConfigurerAdapter {
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@SuppressWarnings("deprecation")
 	@Bean
@@ -42,5 +42,5 @@ public class SecurityConfig {/*extends WebSecurityConfigurerAdapter {
 		.anyRequest()
 		.authenticated()
 		.and().httpBasic();
-	}*/
+	}
 }
