@@ -17,7 +17,7 @@ public class BaseController  {
 
     @RequestMapping(method = RequestMethod.GET, value = "/hello")
     public ResponseEntity<String> regions() {       	
-    	return new ResponseEntity<String>("Hello Artsci! :)", HttpStatus.OK);
+    	return new ResponseEntity<String>("Hello Artsci! :)))) ", HttpStatus.OK);
     }
     
     @RequestMapping(value = "/hello/name/{name}", method = RequestMethod.GET)
