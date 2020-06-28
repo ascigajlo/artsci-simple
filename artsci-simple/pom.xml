@@ -125,27 +125,12 @@
 
 
 	<build>
+	    <finalName>${artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-                        <plugin>
-                            <groupId>org.mortbay.jetty</groupId>
-                            <artifactId>jetty-maven-plugin</artifactId>
-                            <version>9.3.9.v20160517</version>                            
-                            <configuration>
-                                <useTestScope>true</useTestScope>
-                                <stopPort>8005</stopPort>
-                                <stopKey>DIE!</stopKey>
-                                <systemProperties>
-                                <systemProperty>
-                                <name>jetty.port</name>
-                                <value>8080</value>
-                                </systemProperty>
-                                </systemProperties>
-                            </configuration>
-                         </plugin>
 		</plugins>
 	</build>
 
